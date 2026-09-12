@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTM Testing Ground</title>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P8CX2N5P');</script>
+<!-- End Google Tag Manager --> 
+
+    
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background: #f4f4f9; }
+        .btn { padding: 12px 24px; font-size: 16px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; margin: 10px; }
+        .btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+   <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8CX2N5P"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager -->
+
+
+    <h1>Performance Marketing Tracking Lab</h1>
+    <p>Use this page to test clicks and data layers.</p>
+
+    <button class="btn" id="cta-button">Click Me (Test Click)</button>
+    
+    <br><br>
+    
+    <button class="btn" onclick="pushDataLayer()">Push Custom Data Layer Event</button>
+
+    <script>
+        function pushDataLayer() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'test_conversion',
+                'product_name': 'International SEO Guide',
+                'price': 49.99
+            });
+            alert('Data layer pushed!');
+        }
+    </script>
+
+</body>
+</html>
+
